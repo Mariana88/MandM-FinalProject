@@ -114,14 +114,17 @@ As a private users I can:
   3.1.5 | Add Post | Add a post timeframe| | | 
   3.1.6 | Add Post | Add an organization to the post (i.e. not as mention but really belonging to the organization | | | 
 
-  3.2 | Posting | Delete Post| | | 
+  3.2 | Posting | Delete Post | | |
+  --- | --- | --- | --- | --- | ---
   3.2.1 | Delete Post | Delete my personal Post (any user)| | | 
   3.2.2 | Delete Post | Delete organization Post (the organization)| | | 
 
-  3.3 | Posting | Update Post| | | 
+  3.3 | Posting | Update Post| | |
+  --- | --- | --- | --- | --- | ---
   3.3.1 | Update Post | Update my personal Post (any user)| | | 
   3.3.2 | Delete Post | Update organization Post (team members)| | |
   3.3.3 | Update Post | Delete item | | | 
+  --- | --- | --- | --- | --- | ---
   3.3.4 | Update Post | Update item (everything for now) | | | 
   3.3.4.1 | Update Post | Update item as 'completed/no longer available'| | | 
   3.3.5 | Update Post | Add extra item | | | 
