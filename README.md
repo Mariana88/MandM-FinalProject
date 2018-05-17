@@ -85,7 +85,7 @@ As a private users I can:
  Req ID | Overall Functionality | Description | Acceptance Criteria | Addressed Stories | Target Version
  --- | --- | --- | --- | --- | ---
  1 | User management | | | | |
-  --- | --- | --- | --- | --- | ---
+--- | --- | --- | --- | --- | ---
   1.1 | | Add user (first name, last name, email, nickname, social media profiles (0-n), phone, location(city) | | |
   1.1.1 | Add user | Select user type (person or organization) | | | 
   1.1.2 | Add user | Add first name | | |
@@ -95,14 +95,14 @@ As a private users I can:
   1.1 | | Add user (first name, last name, email, nickname, social media profiles (0-n), phone, location(city) | | |  
   1.2 | | Update user | | | 
   1.3 | | Delete user | | | 
-  2 | Org Teams | | | | 
+2 | Org Teams | | | | 
+ --- | --- | --- | --- | --- | ---
   2.1 | Org Teams | Add organization to user (1-n - either user or organization can add) | | | 
   2.2 | Org Teams | Aprove/Reject team member association (user or organization) | | | 
   2.3 | Org Teams | Invite team member| |4 | |
   2.4 | Org Teams | Remove member from team(organization or user) | | | 
-
-  3 | Posting | | | | 
-  --- | --- | --- | --- | --- | ---
+3 | Posting | | | | 
+ --- | --- | --- | --- | --- | ---
   3.1 | Posting | Add Post| | | 
   3.1.1 | Add Post | Select post type (offered or needed) | | | 
   3.1.2 | Add Post | Select post category (donation or volunteering) | | | 
@@ -113,12 +113,10 @@ As a private users I can:
   3.1.4 | Add Post | Add a post location | | | 
   3.1.5 | Add Post | Add a post timeframe| | | 
   3.1.6 | Add Post | Add an organization to the post (i.e. not as mention but really belonging to the organization | | | 
-
   3.2 | Posting | Delete Post | | |
   --- | --- | --- | --- | --- | ---
   3.2.1 | Delete Post | Delete my personal Post (any user)| | | 
   3.2.2 | Delete Post | Delete organization Post (the organization)| | | 
-
   3.3 | Posting | Update Post| | |
   --- | --- | --- | --- | --- | ---
   3.3.1 | Update Post | Update my personal Post (any user)| | | 
@@ -132,6 +130,20 @@ As a private users I can:
   3.3.7 | Update Post | Update location | | | 
   3.3.8 | Update Post | Update timeframe | | | 
   3.3.9 | Update Post | Mark post as 'completed/no longer available'| | | 
-
+  4. | Searching| | | |
+ --- | --- | --- | --- | --- | ---
+  4.1 | Searching| Date| | |
+  4.2 | Searching| Location | | |
+  4.2 | Searching| Name of item| | |
+  4.3 | Searching| Search by description (optional)| | |
+  4.4 | Searching | Spell check (optional)| | |
+  4.5 | Searching | None identical word (optional)| | |
+  5. | Sharing| | | |
+ --- | --- | --- | --- | --- | ---
+  5.1 | Sharing| Link http with post | | |
+  5.2 | Sharing| New button for sharing with e.i Facebook (optional) | | |
+  5.3 | Sharing| | | |
+  5.4 | Sharing| | | |
+  5.5 | Sharing| | | |
 
 
