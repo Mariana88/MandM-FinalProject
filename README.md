@@ -129,6 +129,8 @@ As a private users I can:
   3.3.7 | Update Post | Update location | | | 
   3.3.8 | Update Post | Update timeframe | | | 
   3.3.9 | Update Post | Mark post as 'completed/no longer available'| | | 
+  4 | Searching | | | | 
+  5 | Sharing | | | | 
 
 
 
