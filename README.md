@@ -84,8 +84,8 @@ As a private users I can:
  
  Req ID | Overall Functionality | Description | Acceptance Criteria | Addressed Stories | Target Version
  --- | --- | --- | --- | --- | ---
- 1 | User management | | | | |
---- | --- | --- | --- | --- | ---
+1 | User management | | | | |
+ --- | --- | --- | --- | --- | ---
   1.1 | | Add user (first name, last name, email, nickname, social media profiles (0-n), phone, location(city) | | |
   1.1.1 | Add user | Select user type (person or organization) | | | 
   1.1.2 | Add user | Add first name | | |
@@ -96,7 +96,7 @@ As a private users I can:
   1.2 | | Update user | | | 
   1.3 | | Delete user | | |
    |  |  |  |  |
-  2 | Org Teams | | | |
+2 | Org Teams | | | |
   --- | --- | --- | --- | --- | ---
   2.1 | Org Teams | Add organization to user (1-n - either user or organization can add) | | | 
   2.2 | Org Teams | Aprove/Reject team member association (user or organization) | | | 
@@ -129,7 +129,8 @@ As a private users I can:
   3.3.7 | Update Post | Update location | | | 
   3.3.8 | Update Post | Update timeframe | | | 
   3.3.9 | Update Post | Mark post as 'completed/no longer available'| | | 
-  4. | Searching| | | |
+    |  |  |  |  |
+4 | Searching| | | |
  --- | --- | --- | --- | --- | ---
   4.1 | Searching| Date| | |
   4.2 | Searching| Location | | |
@@ -137,7 +138,8 @@ As a private users I can:
   4.3 | Searching| Search by description (optional)| | |
   4.4 | Searching | Spell check (optional)| | |
   4.5 | Searching | None identical word (optional)| | |
-  5. | Sharing| | | |
+    |  |  |  |  |
+  5 | Sharing| | | |
  --- | --- | --- | --- | --- | ---
   5.1 | Sharing| Link http with post | | |
   5.2 | Sharing| New button for sharing with e.i Facebook (optional) | | |
