@@ -1,0 +1,29 @@
+{
+    "user_model": {
+        "data": {
+            "userX": {
+                "id": "Number",
+                "type": "String", //fixed values "person" and "organization"
+                "firstName": "String",
+                "lastName": "String",
+                "userName": "String",
+                "password": "String",
+                "email": "String",
+                "phoneNumber": "String",
+                "location": "String",
+                "profilePicture": "String",
+                "links": {
+                    "facebook": "String",
+                    "twiter": "String",
+                    "linkedln": "String",
+                    "website": "String"
+                },
+                "organization": ["Number", "Number"],
+                "teamMember": ["Number", "Number"]
+            },
+            "post": {
+
+            }
+        }
+    }
+}

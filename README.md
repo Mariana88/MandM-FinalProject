@@ -94,17 +94,6 @@ As a private users I can:
   1.1 | | Add user (first name, last name, email, nickname, social media profiles (0-n), phone, location(city) | | | 
   1.1 | | Add user (first name, last name, email, nickname, social media profiles (0-n), phone, location(city) | | |  
   1.2 | | Update user | | | 
-<<<<<<< HEAD
-  1.3 | | Delete user | | | 
-2 | Org Teams | | | | 
- --- | --- | --- | --- | --- | ---
-  2.1 | Org Teams | Add organization to user (1-n - either user or organization can add) | | | 
-  2.2 | Org Teams | Aprove/Reject team member association (user or organization) | | | 
-  2.3 | Org Teams | Invite team member| |4 | |
-  2.4 | Org Teams | Remove member from team(organization or user) | | | 
-3 | Posting | | | | 
- --- | --- | --- | --- | --- | ---
-=======
   1.3 | | Delete user | | |
    |  |  |  |  |
   2 | Org Teams | | | |
@@ -116,7 +105,6 @@ As a private users I can:
    |  |  |  |  |
   3 | Posting | | | | 
   --- | --- | --- | --- | --- | ---
->>>>>>> 2caaa0feae039ac110278525b2b4d300a1cfc366
   3.1 | Posting | Add Post| | | 
   3.1.1 | Add Post | Select post type (offered or needed) | | | 
   3.1.2 | Add Post | Select post category (donation or volunteering) | | | 
@@ -141,7 +129,6 @@ As a private users I can:
   3.3.7 | Update Post | Update location | | | 
   3.3.8 | Update Post | Update timeframe | | | 
   3.3.9 | Update Post | Mark post as 'completed/no longer available'| | | 
-<<<<<<< HEAD
   4. | Searching| | | |
  --- | --- | --- | --- | --- | ---
   4.1 | Searching| Date| | |
@@ -157,10 +144,5 @@ As a private users I can:
   5.3 | Sharing| | | |
   5.4 | Sharing| | | |
   5.5 | Sharing| | | |
-=======
-  4 | Searching | | | | 
-  5 | Sharing | | | | 
-
->>>>>>> 2caaa0feae039ac110278525b2b4d300a1cfc366
 
 
