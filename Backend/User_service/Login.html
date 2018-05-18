@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Contact details</legend>
+            <label for="firstName">First name
+                <em>*</em>
+            </label>
+            <input id="firstName" placeholder="John" autofocus required>
+            <br>
+
+            <label for="lastName">Last name
+                <em>*</em>
+            </label>
+            <input id="lastName" placeholder="Smith" autofocus required>
+            <br>
+
+            <label for="userName">User name
+                <em>*</em>
+            </label>
+            <input id="userName" placeholder="e.i. John" autofocus required>
+            <br>
+
+            <label for="password">Password
+                <em>*</em>
+            </label>
+            <input id="password" placeholder="flower123" autofocus required>
+            <br>
+
+            <label for="email">E-mail
+                <em>*</em>
+            </label>
+            <input id="email" placeholder="johnsmith@gmail.com" autofocus required>
+            <br>
+
+            <label for="phoneNumber">Phone number
+            </label>
+            <input id="phoneNumber" placeholder="+32 111 22 33 44">
+            <br>
+
+            <label for="location">Location
+                <em>*</em>
+            </label>
+            <input id="location" placeholder="Brussels" autofocus required>
+            <br>
+        </fieldset>
+        <fieldset>
+                <legend>Are you member of organization, an organization or a private user?</legend>
+                <label for="private user"><input id="PUser" type="checkbox">Private user</label>
+                <label for=" member organization"><input id="MemberOrg" type="checkbox">Member of Organization</label>
+                <select id="Organizations">
+                        <option value="firstOrg">First organization</option>
+                        <option value="secondOrg">Second organization</option>
+                        <option value="thirdOrg">Third organization</option>
+                <label for="organization"><input id="Org" type="checkbox">Organization</label>
+                <select id="Organizations">
+                    <option value="firstOrg">First organization</option>
+                    <option value="secondOrg">Second organization</option>
+                    <option value="thirdOrg">Third organization</option>
+                </select><br>
+        </fieldset>
+        <fieldset>
+            <legend>More details</legend>
+            <label for="commentsAboutYou">Tell us about you
+            </label>
+            <textarea id="commentsAboutYou"></textarea>
+        </fieldset>
+        <fieldset>
+                <legend>Your post</legend>
+                <label for="yourPost">Write here your post
+                </label>
+                <textarea id="post"></textarea>
+        </fieldset>
+
+        
+    </div>
+    
+</body>
+</html>
