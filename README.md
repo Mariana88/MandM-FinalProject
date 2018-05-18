@@ -129,8 +129,8 @@ As a private users I can:
   3.3.7 | Update Post | Update location | | | 
   3.3.8 | Update Post | Update timeframe | | | 
   3.3.9 | Update Post | Mark post as 'completed/no longer available'| | | 
-    |  |  |  |  |
-4 | Searching| | | |
+|  |  |  |  | 
+4 | Searching | | | |
  --- | --- | --- | --- | --- | ---
   4.1 | Searching| Date| | |
   4.2 | Searching| Location | | |
@@ -138,8 +138,8 @@ As a private users I can:
   4.3 | Searching| Search by description (optional)| | |
   4.4 | Searching | Spell check (optional)| | |
   4.5 | Searching | None identical word (optional)| | |
-    |  |  |  |  |
-  5 | Sharing| | | |
+ |  |  |  |  |
+5 | Sharing | | | | 
  --- | --- | --- | --- | --- | ---
   5.1 | Sharing| Link http with post | | |
   5.2 | Sharing| New button for sharing with e.i Facebook (optional) | | |
