@@ -11,6 +11,7 @@
                 "email": "String",
                 "phoneNumber": "String",
                 "location": "String",
+                "commentsAboutYou": "String",
                 "profilePicture": "String",
                 "links": {
                     "facebook": "String",

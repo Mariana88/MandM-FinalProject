@@ -1,14 +1,25 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Login page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="LoginPage.css" />
+    <!-- <script src="main.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./Scripts/handler.js"></script>
+    <script src="./Scripts/controller.js"></script>
+    <!-- <script src="./Scripts/view.js"></script>
+    <script src="./Scripts/init.js"></script> -->
 </head>
+<header>
+    <h1>Login page</h1>
+</header>
+
 <body>
-    <div>
+    <!-- <form action="localhost:port/endpoint" method="POST" name="myForm"> -->
+    <div id="container">
         <fieldset>
             <legend>Contact details</legend>
             <label for="firstName">First name
@@ -51,21 +62,28 @@
             </label>
             <input id="location" placeholder="Brussels" autofocus required>
             <br>
+            <div id="dropBox">
+                <div>Drop your picture here...</div>
+            </div>
         </fieldset>
         <fieldset>
-                <legend>Are you member of organization, an organization or a private user?</legend>
-                <label for="private user"><input id="PUser" type="checkbox">Private user</label>
-                <label for=" member organization"><input id="MemberOrg" type="checkbox">Member of Organization</label>
-                <select id="Organizations">
-                        <option value="firstOrg">First organization</option>
-                        <option value="secondOrg">Second organization</option>
-                        <option value="thirdOrg">Third organization</option>
-                <label for="organization"><input id="Org" type="checkbox">Organization</label>
+            <legend>Are you member of organization, an organization or a private user?</legend>
+            <label for="private user">
+                <input id="PUser" type="checkbox">Private user</label>
+            <label for=" member organization">
+                <input id="MemberOrg" type="checkbox">Member of Organization</label>
+            <select id="Organizations">
+                <option value="firstOrg">First organization</option>
+                <option value="secondOrg">Second organization</option>
+                <option value="thirdOrg">Third organization</option>
+                <label for="organization">
+                    <input id="Org" type="checkbox">Organization</label>
                 <select id="Organizations">
                     <option value="firstOrg">First organization</option>
                     <option value="secondOrg">Second organization</option>
                     <option value="thirdOrg">Third organization</option>
-                </select><br>
+                </select>
+                <br>
         </fieldset>
         <fieldset>
             <legend>More details</legend>
@@ -73,15 +91,15 @@
             </label>
             <textarea id="commentsAboutYou"></textarea>
         </fieldset>
-        <fieldset>
-                <legend>Your post</legend>
-                <label for="yourPost">Write here your post
-                </label>
-                <textarea id="post"></textarea>
-        </fieldset>
-
-        
     </div>
-    
+    <input id="submit" value="Submit" type="submit" onclick="handler.create()">
+    <!-- </form> -->
+    <footer>
+        <p herf="AboutUS.html">About us</p>
+        <p>Copyright © 2018</p>
+    </footer>
+    <form id="logInFrom" action="processAplication.cgi" novalidate></form>
+    <input type="submit" value="Keep for later" formnovalidate>
 </body>
+
 </html>
