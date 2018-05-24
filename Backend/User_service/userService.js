@@ -3,11 +3,16 @@ const app = express();
 const bodyParser = require('body-parser')
 const cors = require('cors');
 
+
 app.use(bodyParser.urlencoded({
-    extended: true
+    extended: false
 }))
 app.use(bodyParser.json())
 app.use(cors());
+
+app.post('/withBody', (req,res)=>{
+    console.log(req.body);
+})
 
 app.post('/addUser', (req, res) => {
     res.send(req.params)
@@ -17,15 +22,9 @@ app.post('/addUser', (req, res) => {
 
 app.get('/', (req, res) => res.send('Hello there!'));
 app.post('/', (req, res) => res.send('Hello from post!'));
-app.get('/:userName', function (req, res) {
-    res.send(req.params) 
-    if (firstName == undefined || lastName == undefined ||
-        userName == undefined || mail == undefined ||
-        password == undefined) {
-        res.send("Error");
-    } else {
-        res.send()
-    }
+app.get('/:email', function (req, res) {
+    res.send(req.body.newUser.email) 
+    
 })
 
 

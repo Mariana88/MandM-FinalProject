@@ -1,8 +1,8 @@
-input: required: invalid{
+input:required:invalid{
     background-color: lightyellow;
-},
+}
 
-input: required{
+input:required{
     background-color: lightyellow;
 }
 
