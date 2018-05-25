@@ -1,20 +1,16 @@
 var controller = {
     add_user: function (_newUser) {
-        axios.post('http://localhost:3001/withBody', {
-                newUser: _newUser
-            })
+        axios.post('http://localhost:3001/api/user', {
+            newUser: _newUser
+        })
             .then((response) => {
                 console.log(response);
-                /*
-                    1. If response is correct, redirect to new page as logged user
-                    2. Otherwise, report error information
-                */
-                //this.view.render_add(response.data);
+
             })
             .catch((error) => {
                 if (error) {
                     console.log(error);
-                }
+                } 
             });
     },
 
@@ -100,6 +96,13 @@ var controller = {
     }
 
 };
+
+
+ /*
+                    1. If response is correct, redirect to new page as logged user
+                    2. Otherwise, report error information
+                */
+                //this.view.render_add(response.data);
 
 // if (req.body.newUser.firstName == undefined || lastName == undefined ||
 //     userName == undefined || mail == undefined ||

@@ -7,9 +7,9 @@ let handler = {
     //     }
     // },
 
-    submit: function () {
-        // controller.submit();
-        /*
+    create: function () {
+         controller.add_user(_newUser)
+        /* 
             1. Create User Object
             2. Validate User Object
             3. If valid, send to controller

@@ -5,8 +5,10 @@ let userStorage = {
 let user1 = {
     firstName: "John",
     lastName: "Smith",
-    email: "johnsmith@gmail.com"
-}
+    email: "johnsmith@gmail.com",
+};
+
+
 
 userStorage.data.push(user1);
 
