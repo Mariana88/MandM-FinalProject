@@ -1,6 +1,12 @@
 var express = require("express");
 var app = express();
 var path = require("path");
+const bodyparer = require('body-parser');
+var cors = require('cors');
+
+app.use(cors());
+app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({extended: false}));
 
 app.use('/static', express.static('public'));
 app.get('/', function(req, res){
