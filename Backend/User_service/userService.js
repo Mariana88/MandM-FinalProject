@@ -20,9 +20,16 @@ app.get('/api/user/verify/:email', function (req, res) {
     let emailToCheck = req.params.email;
     let found = storage.data.find(function(element){
         return element.email == emailToCheck; 
-    })
-    res.send(found); 
-    console.log(element);
+    });
+    if (found == undefined){
+        res.send({
+            isValid: true
+        })
+    }else{
+        res.send({
+            isValid: false
+        }); 
+    }
 });
 
 //It takes data from request and sends it to system
@@ -44,7 +51,7 @@ app.post('/api/user', (req, res) => {
         storage.data.push(user);
         res.send("204: " + user);
     } else {
-        console.log(res.send("The user using this e-mail already exist."))
+        console.log(res.send("Invalid email"))
         
     }
 })

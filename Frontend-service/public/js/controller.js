@@ -91,7 +91,7 @@ var controller = {
             handler.create_newUser(new_user);
         }else{
             console.error("error");
-        }
+        } 
         
     }
 
