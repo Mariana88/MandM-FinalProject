@@ -10,6 +10,17 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json())
 app.use(cors());
 
+app.get('/login', function(req, res){
+    let emailToVerify  = req.query.email;
+    let passwordToVerify = req.query.password;
+    if(emailToVerify  != undefined && passwordToVerify  != undefined){
+        let user = storage.data.find(function(el){
+            return el.email == emailToVerify  && el.password == passwordToVerify;
+        })
+        res.send (user);
+    }
+})
+
 //It returns array of user data
 app.get('/api/user', function (req, res) {
     res.send(storage.data);
