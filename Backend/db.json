@@ -1,9 +1,8 @@
-{
-    "user_model": {
+{   "user_model": {
         "data": {
             "userX": {
                 "id": "Number",
-                "type": "String", //fixed values "person" and "organization"
+                "type": "String",
                 "firstName": "String",
                 "lastName": "String",
                 "userName": "String",
@@ -18,13 +17,25 @@
                     "twiter": "String",
                     "linkedln": "String",
                     "website": "String"
-                },
+                    },
                 "organization": ["Number", "Number"],
                 "teamMember": ["Number", "Number"]
-            },
-            "post": {
-
-            }
+                }
         }
-    }
+    },
+    "post":{
+        "nextId":0,
+        "data":{},
+        "type":"post"
+        },
+    "item":{
+        "nextId":0,
+        "data":{},
+        "type":"item"
+        },
+    "picture":{
+        "nextId":0,
+        "data":{},
+        "type":"picture"
+        }
 }
