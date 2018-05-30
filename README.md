@@ -82,7 +82,9 @@ As a private users I can:
 
  # Application Prototype
 
- [Application WireFramePro Draft](https://wireframepro.mockflow.com/view/draftApplication)
+ * [Application WireFramePro Draft](https://wireframepro.mockflow.com/view/draftApplication)
+ * [Website map](https://s3.amazonaws.com/assets.mockflow.com/app/sitemap/export/Mdef7ee04c90eb49151da0baabfd34d041527692979013.png)
+
  
  # Requirements
  
