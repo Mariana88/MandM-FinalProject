@@ -6,22 +6,139 @@
     <title>Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+
 </head>
 
 <body>
-    <input type="button" onclick="location.href='http://localhost:3000/register';" value="SIGN IN">
+    <!-- <input type="button" onclick="location.href='http://localhost:3000/register';" value="SIGN IN">
 
     <input type="button" onclick="location.href='http://localhost:3000/login';" value="LOG IN">
 
-    <input type="button" onclick="location.href='http://localhost:3000/profile';" value="YOUR PROFILE">
+    <input type="button" onclick="location.href='http://localhost:3000/profile';" value="YOUR PROFILE"> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" herf="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNAv" aria-label="Toggle navigation">
+            <span class="navbar-togggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav justify-content-end">
+                <li class="nav-item active">
+                    <a class="nav-link" herf="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" herf="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="location.href='http://localhost:3000/register';">Sing up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="location.href='http://localhost:3000/login';">Log in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="location.href='http://localhost:3000/profile';">Your Profile</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <nav class="navbar navbar-light bg-light">
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Looking for a post" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
 
     <input type="button" onclick="location.href='http://localhost:3000/post';" value="NEW POST">
 
-    <footer>
-        <p herf="AboutUS.html">About us</p>
-        <p>Copyright © 2018</p>
+    <div class="container text-center my-3">
+        <h3>Bootstrap 4 Multiple Item Carousel</h3>
+        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item row no-gutters active">
+                    <div class="col-3 float-left">
+                        <img class="img-fluid" src="http://placehold.it/350x280/222/fff?text=1">
+                    </div>
+                    <div class="col-3 float-left">
+                        <img class="img-fluid" src="http://placehold.it/350x280/444?text=2">
+                    </div>
+                    <div class="col-3 float-left">
+                        <img class="img-fluid" src="http://placehold.it/350x280/888?text=3">
+                    </div>
+                    <div class="col-3 float-left">
+                        <img class="img-fluid" src="http://placehold.it/350x280/111/fff?text=4">
+                    </div>
+                </div>
+                <div class="carousel-item row no-gutters">
+                    <div class="col-3 float-left">
+                        <img class="img-fluid" src="http://placehold.it/350x280?text=5">
+                    </div>
+                    <div class="col-3 float-left">
+                        <img class="img-fluid" src="http://placehold.it/350x280/555?text=6">
+                    </div>
+                    <div class="col-3 float-left">
+                        <img class="img-fluid" src="http://placehold.it/350x280/333/fff?text=7">
+                    </div>
+                    <div class="col-3 float-left">
+                        <img class="img-fluid" src="http://placehold.it/350x280/bbb?text=8">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <h4>Advances all 4 slides each time</h4>
+    </div>
+
+    <footer class="page-footer font-small cyan darken-3 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 py-5">
+                    <div class="mb-5 flex-center">
+                        <a class="fb-ic">
+                            <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center" herf="AboutUS.html">About us</p>
+        <div class="footer-copyright text-center py-3">Copyright © 2018</div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
