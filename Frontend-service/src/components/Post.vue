@@ -25,14 +25,14 @@ export default {
   },
   methods: {
     fetchPost() {
-      fetch("htttp://localhost:3000", {
+      fetch("http://localhost:3000", {
         method: "GET"
       })
         .then(response => response.json())
         .then(json => (this.character = json));
     },
     getPostById (postID){
-      axios.get('http://localhost:3000/onePost')
+      axios.get('http://localhost:3000/post')
       .then(function(response){
         if(postID !=undefined){
           vue.onePost.push(postID)
