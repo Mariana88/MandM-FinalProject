@@ -6,6 +6,7 @@ let user1 = {
     firstName: "John",
     lastName: "Smith",
     email: "johnsmith@gmail.com",
+    password: "123"
 };
 
 

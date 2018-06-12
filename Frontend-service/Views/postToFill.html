@@ -6,32 +6,87 @@
     <title>Post to fill</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/post.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 </head>
-<header>
-    <h1>Post to fill</h1>
-</header>
 
 <body>
-    <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" herf="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNAv" aria-label="Toggle navigation">
+            <span class="navbar-togggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" herf="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="location.href='#';">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="form-inline">
+        <form>
+            <input class="form-control mr-sm-2" type="postTitle" placeholder="Enter your title of post" aria-label="postTitle">
+        </form>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" name="group101" type="radio" id="radio103">
+            <label class="form-check-label" for="radio103">Need </label>
+        </div>
+
+        <div class="form-check form-check-inline radio-green">
+            <input class="form-check-input" name="group101" type="radio" id="radio104" checked>
+            <label class="form-check-label" for="radio104">Offert </label>
+        </div>
+        <form>
+            <input class="form-control mr-sm-2" type="postLocation" placeholder="Enter your location" aria-label="postTitle">
+        </form>
+        <p>Choose the date
+            <input type="date" min="2018-01-01" max="2018-12-31">
+        </p>
+    </div>
+    <div class="form-inline">
         <fieldset>
-            <legend>Your post</legend>
-            <label for="yourPost">Write here your post
-            </label>
-            <textarea id="post"></textarea>
+            <legend>Describe briefly your post here: </legend>
+                <textarea id="post"></textarea>
         </fieldset>
-        <p>Choose the date <input type="date" min="2018-01-01" max="2018-12-31"></p>
     </div>
     <div id="dropBox">
         <div>Drop your picture here...</div>
     </div>
 </body>
-<footer>
-    <p herf="AboutUS.html">About us</p>
-    <p>Copyright © 2018</p>
+<footer class="page-footer font-small cyan darken-3 mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 py-5">
+                <div class="mb-5 flex-center">
+                    <a class="fb-ic">
+                        <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic">
+                        <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="gplus-ic">
+                        <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Linkedin -->
+                    <a class="li-ic">
+                        <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                        <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-center" herf="AboutUS.html">About us</p>
+    <div class="footer-copyright text-center py-3">Copyright © 2018</div>
 </footer>
 
 </html>
-
-
-

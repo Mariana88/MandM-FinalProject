@@ -27,12 +27,13 @@ app.get('/api/user', function (req, res) {
 });
 
 // It returns information if the user already exist in our system
-app.get('/api/user/verify/:email', function (req, res) {
+app.get('/api/user/authenticate/:email/:password', function (req, res) {
     let emailToCheck = req.params.email;
+    let passwordToCheck = req.params.password;
     let found = storage.data.find(function(element){
-        return element.email == emailToCheck; 
+        return element.email === emailToCheck && element.password === passwordToCheck; 
     });
-    if (found == undefined){
+    if (found != undefined){
         res.send({
             isValid: true
         })
