@@ -1,9 +1,9 @@
 <template>
 <div id="app">
 
-<post-creator></post-creator>
+<!-- <post-creator></post-creator> -->
 <!-- <login></login> -->
-<!-- <home></home> -->
+<home></home>
    <!-- <post id="1"></post> -->
     <!-- <h3>{{title}}</h3>
     <div class="col-md-12">

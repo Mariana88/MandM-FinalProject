@@ -2,7 +2,7 @@
     <div>
         <div class="container text-center my-3">
             <h1>Needs</h1>
-            <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div id="needs" type="needs" v-bind:posts="needs" class="carousel slide w-100" data-ride="carousel">
                 <div class="carousel-inner w-100" role="listbox">
                     <carousel v-bind:posts="needs"></carousel>
                 </div>
@@ -16,10 +16,12 @@
                 </a>
             </div>
 
-            <div><h1>Offerts</h1></div>
-            <div id="recipeCarousel2" class="carousel slide w-100" data-ride="carousel">
+            <div>
+                <h1>Offerts</h1>
+            </div>
+            <div id="offerts" type="offerts" v-bind:posts="offerts" class="carousel slide w-100" data-ride="carousel">
                 <div class="carousel-inner w-100" role="listbox">
-                    <carousel v-bind:posts="offerts"></carousel>  
+                    <carousel v-bind:posts="offerts"></carousel>
                 </div>
                 <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -32,7 +34,7 @@
             </div>
 
             <h4>Advances all 4 slides each time</h4>
-            </div>
+        </div>
 
     </div>
 </template>
@@ -49,6 +51,11 @@ export default {
         "http://placehold.it/350x280/444?text=2",
         "http://placehold.it/350x280/888?text=3",
         "http://placehold.it/350x280/111/fff?text=4"
+        /*
+            To powinno sie stac tablicą obiektów typu (Post.js), które przekazujemy do karuzeli.
+            W Carousel.vue powinnas sprecyzować jak będzie wyglądać każdy element karuzeli (czy będzie to zdjęcie
+            czy jakis opis)
+        */
       ],
       offerts: [
         "http://placehold.it/350x280?text=5",
@@ -57,6 +64,24 @@ export default {
         "http://placehold.it/350x280/bbb?text=8"
       ]
     };
+  },
+  created: function() {
+    this.getOfferts();
+    this.getNeeds();
+  },
+  methods: {
+    getNeeds: function() {
+      fetch("http://localhost:4005/api/posts/type/NEED", { mode: "cors" })
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .catch(error => console.log(error));
+    },
+    getOfferts: function() {
+      fetch("http://localhost:4005/api/posts/type/OFFERT", { mode: "cors" })
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .catch(error => console.log(error));
+    }
   },
   components: {
     Carousel

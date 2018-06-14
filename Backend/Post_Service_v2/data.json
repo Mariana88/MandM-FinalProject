@@ -1,0 +1,14 @@
+{
+    "posts": [{
+        "id": 0,
+        "title": "My first title",
+        "description": "My Description",
+        "postType": "NEED"
+    }, 
+    {
+        "id": 1,
+        "title": "My second title",
+        "description": "My Other Description",
+        "postType": "OFFERT"
+    }]
+}

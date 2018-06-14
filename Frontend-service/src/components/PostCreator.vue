@@ -31,19 +31,23 @@
             </div>
             <div class="col-md-6 offset-7">
                 <div id="dropBox" class="drop_box">
+                    <br/>
+                    <br/>
+                    <br/>
                     <p>Drop your picture here...</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-2">
                 <div class="form-group">
                     <div class="dropdown show">
-                        <label for="quantity">Choose here the quantity of items if applicable </label>
-                        <a name="quantity" class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <label for="enter-number">Choose here the quantity of items if applicable </label>
+                        <!-- <a name="quantity" class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Quantity
-                        </a>
-                        <input class="dropdown-menu" aria-labelledby="dropdownMenuLink" />
+                        </a> -->
+                        <!-- <input class="dropdown-menu" aria-labelledby="dropdownMenuLink"> -->
+                        <input name="enter-number" class="form-control mr-sm-2"  placeholder="Enter your number" aria-label="postTitle">
                     </div>
                 </div>
             </div>
@@ -77,24 +81,24 @@ export default {
 
 <style>
 .drop_box {
-  border: 3px dotted yellow;
+  border: 3px dotted grey;
   background-color: oldlace;
   height: 200px;
   width: 200px;
   border-radius: 50%;
 }
-.radio-green [type="radio"]:checked + label:after {
+/* .radio-green [type="radio"]:checked + label:after {
   border-color: #00c851;
   background-color: #00c851;
 }
 /*Gap*/
 
-.radio-green-gap [type="radio"].with-gap:checked + label:before {
+/* .radio-green-gap [type="radio"].with-gap:checked + label:before {
   border-color: #00c851;
 }
 
 .radio-green-gap [type="radio"]:checked + label:after {
   border-color: #00c851;
-  background-color: #00c851;
-}
+  background-color: #00c851; 
+} */
 </style>
