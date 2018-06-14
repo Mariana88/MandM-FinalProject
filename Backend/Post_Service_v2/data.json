@@ -10,5 +10,11 @@
         "title": "My second title",
         "description": "My Other Description",
         "postType": "OFFERT"
+    },
+    {
+        "id": 2,
+        "title": "My third title",
+        "description": "Third!",
+        "postType": "NEED"
     }]
 }

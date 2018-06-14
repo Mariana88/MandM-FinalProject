@@ -2,7 +2,7 @@
     <div>
         <div class="container text-center my-3">
             <h1>Needs</h1>
-            <div id="needs" type="needs" v-bind:posts="needs" class="carousel slide w-100" data-ride="carousel">
+            <div id="needs" type="needs" class="carousel slide w-100" data-ride="carousel">
                 <div class="carousel-inner w-100" role="listbox">
                     <carousel v-bind:posts="needs"></carousel>
                 </div>
@@ -46,34 +46,24 @@ export default {
   name: "home",
   data: function() {
     return {
-      needs: [
-        "http://placehold.it/350x280/222/fff?text=1",
-        "http://placehold.it/350x280/444?text=2",
-        "http://placehold.it/350x280/888?text=3",
-        "http://placehold.it/350x280/111/fff?text=4"
-        /*
-            To powinno sie stac tablicą obiektów typu (Post.js), które przekazujemy do karuzeli.
-            W Carousel.vue powinnas sprecyzować jak będzie wyglądać każdy element karuzeli (czy będzie to zdjęcie
-            czy jakis opis)
-        */
-      ],
-      offerts: [
-        "http://placehold.it/350x280?text=5",
-        "http://placehold.it/350x280/555?text=6",
-        "http://placehold.it/350x280/333/fff?text=7",
-        "http://placehold.it/350x280/bbb?text=8"
-      ]
+      needs: [],
+      offerts: []
     };
   },
   created: function() {
-    this.getOfferts();
+    //this.getOfferts();
     this.getNeeds();
   },
   methods: {
     getNeeds: function() {
       fetch("http://localhost:4005/api/posts/type/NEED", { mode: "cors" })
         .then(response => response.json())
-        .then(response => console.log(response))
+        .then(needPosts => {
+            console.log(needPosts)
+            for (let it = 0; it < needPosts.length; ++it) {
+                this.needs.push(needPosts[it]);
+            }
+        })
         .catch(error => console.log(error));
     },
     getOfferts: function() {
